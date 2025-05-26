@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" class="bg-black text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Rishitha's Portfolio</title>
+  </head>
+
+  <body class="bg-black text-white">
+    <!-- NavBar -->
+    <nav class="fixed top-0 w-full bg-zinc-900 text-white z-50 shadow-md">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center rounded-b-lg">
+        <!-- Links -->
+        <ul class="flex gap-10 text-gray-300 font-mono text-lg">
+	<li><a href="#" class="hover:text-pink-500 transition-colors duration-200">Home</a></li>
+	<li><a href="#projects" class="hover:text-pink-500 transition-colors duration-200">Projects</a></li>
+	<li><a href="#about" class="hover:text-pink-500 transition-colors duration-200">About me</a></li>
+	<li><a href="#contact" class="hover:text-pink-500 transition-colors duration-200">Get In Touch</a></li>
+		</ul>
+
+
+        <!-- Social icons -->
+	<div class="flex items-center gap-3">
+	<a href="https://linkedin.com" target="_blank" class="bg-black p-2 rounded-full hover:bg-white transition">
+		<img src="/linkedin-icon.svg" alt="LinkedIn" class="w-6 h-6 invert" />
+	</a>
+	<a href="https://github.com" target="_blank" class="bg-black p-2 rounded-full hover:bg-white transition">
+		<img src="/github.svg" alt="GitHub" class="w-6 h-6 invert" />
+	</a>
+	<a href="https://discord.com" target="_blank" class="bg-black p-2 rounded-full hover:bg-white transition">
+		<img src="/discord.svg" alt="Discord" class="w-6 h-6 invert" />
+	</a>
+	</div>
+
+      </div>
+    </nav>
+
+    <!-- Main page content -->
+    <slot />
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
